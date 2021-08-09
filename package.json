@@ -1,0 +1,64 @@
+{
+  "main": "lib/commonjs/index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook",
+    "prepare": "bob build",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "@shopify/restyle": "^1.4.0",
+    "expo": "~41.0.1",
+    "expo-status-bar": "~1.0.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-web": "~0.13.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
+    "@types/react": "~16.9.35",
+    "@types/react-native": "~0.63.2",
+    "babel-loader": "^8.2.2",
+    "react-native-builder-bob": "^0.18.1",
+    "react-native-storybook-loader": "^2.0.4",
+    "release-it": "^14.11.0",
+    "typescript": "~4.0.0"
+  },
+  "private": true,
+  "react-native": "src/Components/index.ts",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/Components/index.d.ts",
+  "files": [
+    "src/Components",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "src/Components",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
+}
