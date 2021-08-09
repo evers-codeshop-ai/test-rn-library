@@ -1,5 +1,5 @@
 {
-  "name": "test-rn-library",
+  "name": "test-rn-library-evers-codeshop",
   "main": "lib/commonjs/index.js",
   "scripts": {
     "start": "expo start",
