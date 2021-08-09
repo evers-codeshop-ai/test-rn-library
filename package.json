@@ -1,4 +1,5 @@
 {
+  "name": "test-rn-library",
   "main": "lib/commonjs/index.js",
   "scripts": {
     "start": "expo start",
