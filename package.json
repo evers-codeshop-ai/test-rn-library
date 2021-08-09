@@ -61,5 +61,6 @@
   "eslintIgnore": [
     "node_modules/",
     "lib/"
-  ]
+  ],
+  "version": "1.0.0"
 }
